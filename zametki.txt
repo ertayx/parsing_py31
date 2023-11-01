@@ -1,0 +1,16 @@
+при создании проекта мы создаем вируальное окружение
+python3 -m venv {название вирт.окрж}
+
+что бы активировть вирт.окрж вводим след команду
+source {название вирт.окрж}/bin/activate
+
+pip install {название модуля (библотеки)}
+
+pip install -r {название файла}
+
+response = requests.get('https://enter.kg/computers/noutbuki_bishkek')
+
+soup = BS(response.text, 'lxml')
+soup.find('div', class_='item')
+soup.find_all()
+soup.get()
